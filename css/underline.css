@@ -14,17 +14,16 @@
         border-radius: 2px;
     
         background-color: var(--accent-color);
-        display: none;
-    
+          
         opacity: 0;
-        transition:  opacity 250ms var(--timing-function);
+        transition: opacity 250ms var(--timing-function);
     }
     
     .menu-link:hover::after{
     display: block;
-    opacity: 1;
-    
+    opacity: 1;    
     }
+
     .active::after{
         position: absolute;
         bottom: -25px;
@@ -39,6 +38,5 @@
         background-color: var(--accent-color);
     
         opacity: 1;
-        transition:  opacity 250ms var(--timing-function);
     }
     
