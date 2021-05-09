@@ -1167,9 +1167,9 @@ textarea{
 }
 
 .checkbox:checked + .icon-checkbox{
-    background-image: url('./'); 
-    background-color: #2196F3;
-   background-size: contain; 
+    background-image: url('./images/icon/icon-check.svg'); 
+    
+    background-size: contain; 
    
 }
 
