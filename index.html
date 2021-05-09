@@ -145,7 +145,7 @@
   </div>
 </section>
 <!--our command-->
-<section class="section">
+<section class="section bg-section" >
   <div class="container">  
     <h2 class="section-title">Наша команда</h2>
     <ul class="section-card">
@@ -400,7 +400,7 @@
     </div> 
     <div class="footer-subscribe footer-block">
       <h2 class="footer-conect">Подпишитесь на рассылку</h2>
-      <form class="social-net">
+      <form class="social-net" autocomplete="off">
         <input class="form-field-footer" type="mail" name="user_mail" placeholder="E-mail">
         <button class="button footer-btn" type="submit">Подписаться
           <svg class="icon-send">
@@ -420,7 +420,7 @@
       </svg>
     </button>
     <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-    <form class="form">
+    <form class="form" autocomplete="off">
     <label class="form-field-label"> 
       <span class="modal-form-text">Имя</span>
       <svg class="modal-icon">
@@ -444,7 +444,7 @@
       class="form-field" 
       type="tel" 
       name="user_phone" 
-      placeholder="" 
+      pattern="[0-9]{10}"
       required
       />
     </label>
@@ -469,15 +469,17 @@
       name="user_message" 
       cols="30" 
       rows="10"
-
       placeholder="Введите текст"
       >
       </textarea>
     </label>
 
       <div class="modal-policy">
-        <input type="checkbox" name="user_policy" required>
-        <a class="policy-rule">Соглашаюсь с рассылкой и принимаю <span class="accent-color">Условия договора</span></a>
+        <label class="chekbox">
+          <input type="checkbox" name="user_policy" class="checkbox" required>
+          <span class="icon-checkbox"></span>
+          <p class="policy-rule">Соглашаюсь с рассылкой и принимаю <span ><a class="accent-color">Условия договора</a></span></p>
+        </label>
       </div>
       <button class="button order" type="submit" >Отправить</button>
       
